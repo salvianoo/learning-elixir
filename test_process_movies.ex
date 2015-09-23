@@ -1,22 +1,22 @@
 defmodule ProcessMovies do
   def nineties(movies) do
     movies
-      |> Enum.filter(&(&1[:year_release] >= 1990 and &1[:year_release] <= 1999))
+    |> Enum.filter(&(&1[:year_release] >= 1990 and &1[:year_release] <= 1999))
   end
 
   def get_rank_and_title(movies) do
     movies
-      |> Enum.map &("#{&1[:rank]} - #{&1[:title]}")
+    |> Enum.map &("#{&1[:rank]} - #{&1[:title]}")
   end
 
   def score_over_eight(movies) do
     movies
-      |> Enum.filter &(&1[:rating] >= 8.0)
+    |> Enum.filter &(&1[:rating] >= 8.0)
   end
 
   def get_title(movies) do
     movies
-      |> Enum.map &(&1[:title])
+    |> Enum.map &(&1[:title])
   end
 end
 
