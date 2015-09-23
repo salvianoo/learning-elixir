@@ -1,5 +1,3 @@
-ExUnit.start
-
 defmodule ProcessMovies do
   def nineties(movies) do
     movies
@@ -21,6 +19,8 @@ defmodule ProcessMovies do
       |> Enum.map &(&1[:title])
   end
 end
+
+ExUnit.start
 
 defmodule ProcessMoviesTest do
   use ExUnit.Case, async: true
