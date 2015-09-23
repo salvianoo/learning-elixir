@@ -22,7 +22,7 @@ defmodule ProcessMovies do
   end
 end
 
-defmodule FilterMoviesTest do
+defmodule ProcessMoviesTest do
   use ExUnit.Case, async: true
 
   setup do
