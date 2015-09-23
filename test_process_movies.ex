@@ -56,8 +56,8 @@ defmodule ProcessMoviesTest do
 
   test "get movies titles with score greater than eight", context do
     assert ["The Godfather", "Pulp Fiction"] == context[:movies]
-                                             |> ProcessMovies.score_over_eight
-                                             |> ProcessMovies.get_title
+                                                |> ProcessMovies.score_over_eight
+                                                |> ProcessMovies.get_title
   end
 
   test "get movies title and rank from the nineties with score greater than eight", context do
